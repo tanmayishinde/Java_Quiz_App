@@ -1,0 +1,6 @@
+<component name="CopyrightManager">
+  <copyright>
+    <option name="notice" value="**&#10; * This is a Basic Android Project&#10; * QuizApp is an android based application, and enables the user to undertake a series of questions on Java language. &#10; * The app is user friendly, and the user shall find it extremely easy to answer the multiple-choice questions. &#10; * At the end of the quiz, a Toast displays the score.&#10; * @author (Tanmayi Shinde) Last modified: 02-11-2022  &#10; */" />
+    <option name="myName" value="Tanmayi" />
+  </copyright>
+</component>

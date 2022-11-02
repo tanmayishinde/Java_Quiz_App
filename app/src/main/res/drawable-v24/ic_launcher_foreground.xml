@@ -1,3 +1,13 @@
+<!--
+  ~ **
+  ~  * This is a Basic Android Project
+  ~  * QuizApp is an android based application, and enables the user to undertake a series of questions on Java language.
+  ~  * The app is user friendly, and the user shall find it extremely easy to answer the multiple-choice questions.
+  ~  * At the end of the quiz, a Toast displays the score.
+  ~  * @author (Tanmayi Shinde) Last modified: 02-11-2022
+  ~  */
+  -->
+
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aapt="http://schemas.android.com/aapt"
     android:width="108dp"
