@@ -44,32 +44,56 @@ public class MainActivity extends AppCompatActivity {
 
         buttonYes.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                if(index <= questions.length-1){
-                    if(answers[index]==true){
-                        //if given correct wrong
+            public void onClick(View view)
+            {
+                //Check codn to avoid the array going out of bound
+                if(index <= questions.length-1)
+                {
+                    //If you have given correct answer
+                    if(answers[index]==true)
+                    {
+                        //if given correct
                         score++;
-                }
-                    qtstextView.setText(questions[index++]);
+                    }
+                    index++;
+                    if(index <= questions.length-1) {
+                        //To move to next qts and setting the new one
+                        qtstextView.setText(questions[index]);
+                    }
+                    else{
+                        Toast.makeText(MainActivity.this, "You score is "+ score +" out of "+ questions.length, Toast.LENGTH_SHORT).show();
+                    }
                 }
                 else{
-                    Toast.makeText(MainActivity.this, "You score is"+score+"out of"+questions.length, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Please restart the application!", Toast.LENGTH_SHORT).show();
                 }
+
+
 
             }
         });
         buttonNo.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                if(index <= questions.length-1){
-                    //if given correct wrong
+            public void onClick(View view)
+            {
+                //Check codn to avoid the array going out of bound
+                if(index <= questions.length-1)
+                {
+                    //If you have given correct answer
                     if(answers[index]==false){
                         score++;
                     }
-                    qtstextView.setText(questions[index++]);
+                    index++;
+                    if(index <= questions.length-1) {
+                        //To move to next qts and setting the new one
+                        qtstextView.setText(questions[index]);
+                    }
+                    else{
+                        Toast.makeText(MainActivity.this, "You score is "+ score +" out of "+ questions.length, Toast.LENGTH_SHORT).show();
+                    }
                 }
                 else{
-                    Toast.makeText(MainActivity.this, "You score is"+score+"\n", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Please restart the application!", Toast.LENGTH_SHORT).show();
                 }
             }
         });
